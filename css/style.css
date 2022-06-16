@@ -27,6 +27,10 @@ body::after {
   background: #535971;
 }
 
+body {
+  background-color: #e5e5e5;
+}
+
 .div__content__master {
   width: 46.875rem;
   margin: auto;
@@ -48,4 +52,52 @@ header h1 {
 header p {
   font-size: 1.25rem;
   color: #fff;
+}
+
+fieldset {
+  border: none;
+}
+
+main {
+  border-radius: 20px;
+  background-color: #fff;
+}
+
+main form fieldset {
+  padding: 64px 64px 30px;
+}
+
+fieldset div legend {
+  font-size: 1.5rem;
+  line-height: 2.125rem;
+  color: #535971;
+  font-family: 'Staatliches', sans-serif;
+  border-bottom: 1px solid #e6e6f0;
+  margin-bottom: 36px;
+  padding-bottom: 10px;
+}
+
+.name__and__surname {
+  display: flex;
+  gap: 22px;
+}
+
+.name__and__surname div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.name__and__surname div label {
+  font-size: 0.875rem;
+  color: #4e4958;
+}
+
+.name__and__surname div input {
+  width: 300px;
+  height: 56px;
+  border-radius: 8px;
+  border: 1px solid #e6e6f0;
 }
