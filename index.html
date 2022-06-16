@@ -38,24 +38,87 @@
             </div>
 
             <div class="large__input__fields">
-              <label for="email">Email <strong>(digite um email válido)</strong></label>
+              <label for="email">Email <span>(digite um email válido)</span></label>
               <input type="text" id="email">
             </div>
 
             <div class="large__input__fields">
-              <label for="senha">Senha <strong>(mínimo de 6 caracteres)</strong></label>
+              <label for="senha">Senha <span>(mínimo de 6 caracteres)</span></label>
               <input type="text" id="senha">
             </div>
           </div>
         </fieldset>
 
-        <div></div>
+        <fieldset>
+          <div>
+            <legend>Informações do mentor</legend>
 
-        <fieldset></fieldset>
+            <div class="large__input__fields">
+              <label for="nome__do__mentor">Nome do mentor <span>(só o primeiro nome)</span></label>
+              <input type="text" id="nome">
+            </div>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <div>
+            <legend>Seus horários disponíveis</legend>
+
+            <div>
+              <h2>Primeira mentoria</h2>
+
+              <div class="first__mentorship">
+                <div class="date__first__mentorship">
+                  <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="text" id="data">
+                </div>
+
+                <div class="container__date">
+                  <div>
+                    <label for="inicio">Das</label>
+                    <input type="text" id="inicio">
+                  </div>
+
+                  <div>
+                    <label for="fim">Até</label>
+                    <input type="text" id="fim">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <h2>Segunda mentoria</h2>
+
+              <div class="first__mentorship">
+                <div class="date__first__mentorship">
+                  <label for="data">Data <span>(DD/MM/AAAA)</span></label>
+                  <input type="text" id="data">
+                </div>
+
+                <div class="container__date">
+                  <div>
+                    <label for="inicio">Das</label>
+                    <input type="text" id="inicio">
+                  </div>
+
+                  <div>
+                    <label for="fim">Até</label>
+                    <input type="text" id="fim">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </fieldset>
       </form>
     </main>
 
-    <footer></footer>
+    <footer>
+      <button class="button" form="mentoring__form">
+        Salvar
+      </button>
+    </footer>
   </div>
 </body>
 

@@ -59,12 +59,17 @@ fieldset {
 }
 
 main {
-  border-radius: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   background-color: #fff;
 }
 
-main form fieldset {
+main form fieldset:first-child {
   padding: 64px 64px 30px;
+}
+
+main form fieldset {
+  padding: 0 64px 30px;
 }
 
 fieldset div legend {
@@ -77,7 +82,8 @@ fieldset div legend {
   padding-bottom: 10px;
 }
 
-.name__and__surname {
+.name__and__surname,
+.first__mentorship {
   display: flex;
   gap: 22px;
 }
@@ -92,20 +98,85 @@ fieldset div legend {
 }
 
 .name__and__surname div label,
-.large__input__fields label {
+.large__input__fields label,
+.date__first__mentorship label,
+.container__date div label {
   font-size: 0.875rem;
   color: #4e4958;
 }
 
 .name__and__surname div input,
-.large__input__fields input {
+.large__input__fields input,
+.container__date div input,
+.first__mentorship .date__first__mentorship input {
   height: 56px;
   border-radius: 8px;
   border: 1px solid #e6e6f0;
+  padding: 0 20px;
 }
 
-.large__input__fields label strong {
+.container__date div input {
+  max-width: 140px;
+}
+
+.large__input__fields label span,
+.date__first__mentorship label span {
   font-size: 0.75rem;
   color: #c1bccc;
-  font-weight: 400; 
+  font-weight: 400;
+}
+
+fieldset div div h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  font-family: 'Staatliches', sans-serif;
+  line-height: 2.125rem;
+  margin-bottom: 11px;
+}
+
+.date__first__mentorship {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  margin-bottom: 20px;
+  flex-direction: column;
+}
+
+.container__date {
+  display: flex;
+  gap: 8px;
+  flex: 1;
+  margin-bottom: 20px;
+}
+
+.container__date div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+footer {
+  display: flex;
+  background-color: #535971;
+  padding: 52px 71px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin-bottom: 50px;
+}
+
+footer button {
+  flex: 1;
+  height: 56px;
+  background-color: #ff5374;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  font-family: 'Staatliches', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.25rem;
+  color: #fff;
+}
+
+footer button:hover {
+  background-color: #c54a62;
 }
