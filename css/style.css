@@ -82,7 +82,8 @@ fieldset div legend {
   gap: 22px;
 }
 
-.name__and__surname div {
+.name__and__surname div,
+.large__input__fields {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -90,14 +91,21 @@ fieldset div legend {
   margin-bottom: 20px;
 }
 
-.name__and__surname div label {
+.name__and__surname div label,
+.large__input__fields label {
   font-size: 0.875rem;
   color: #4e4958;
 }
 
-.name__and__surname div input {
-  width: 300px;
+.name__and__surname div input,
+.large__input__fields input {
   height: 56px;
   border-radius: 8px;
   border: 1px solid #e6e6f0;
+}
+
+.large__input__fields label strong {
+  font-size: 0.75rem;
+  color: #c1bccc;
+  font-weight: 400; 
 }
